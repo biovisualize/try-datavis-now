@@ -3,33 +3,27 @@
   "version": "0.1.0",
   "description": "Gitbook about how to start in datavis",
   "main": "index.js",
-  "scripts": 
-  {
-    "docs:prepare":"gitbook install", 
-    "docs:build":"npm run docs:prepare && gitbook build -g biovisualize/try-datavis-now",
-    "docs:watch":"npm run docs:prepare && gitbook serve",
-    "docs:clean":"rimraf _book", 
-    "docs:publish":"npm run docs:clean && npm run docs:build && cd _book && git init && git commit --allow-empty -m 'update book' && git checkout -b gh-pages && touch .nojekyll && git add . && git commit -am 'commit book gh-pages branch' && git push git@github.com:biovisualize/try-datavis-now.git gh-pages --force"
+  "scripts": {
+    "docs:prepare": "gitbook install",
+    "docs:build": "npm run docs:prepare && gitbook build -g biovisualize/try-datavis-now",
+    "docs:watch": "npm run docs:prepare && gitbook serve",
+    "docs:clean": "rimraf _book",
+    "docs:publish": "npm run docs:clean && npm run docs:build && cd _book && git init && git commit --allow-empty -m 'update book' && git checkout -b gh-pages && touch .nojekyll && git add . && git commit -am 'commit book gh-pages branch' && git push git@github.com:biovisualize/try-datavis-now.git gh-pages --force"
   },
-  "repository": 
-  {
+  "repository": {
     "type": "git",
     "url": "git@github.com:biovisualize/try-datavis-now.git"
   },
-  "keywords": 
-  [
+  "keywords": [
     "gitbook",
     "generateDocs"
   ],
   "author": "Christophe Viau",
   "license": "MIT",
-  "dependencies": 
-  {
-    "gitbook-cli": "^1.0.1",
+  "dependencies": {
     "gitbook-plugin-prism": "^1.0.0"
   },
-  "devDependencies":
-  {
-    "rimraf":"^2.4.4"
+  "devDependencies": {
+    "rimraf": "^2.4.4"
   }
 }
