@@ -1,5 +1,5 @@
 {
-	"gitbook":"2.4.3",
+	"gitbook":"2.6.7",
 	"structure":
 	{
 		"summary":"docs/README.md"
@@ -14,7 +14,7 @@
 		"-highlight":" For syntax highlighting.",
 		"sitemap":" .",
 		"-search":" .",
-		"addcssjs":"Add external css and js firles to gitbook - plugins.gitbook.com/plugin/addcssjs"
+		"addcssjs":"Add external css and js files to gitbook - plugins.gitbook.com/plugin/addcssjs"
 	},
 	"plugins":["edit-link", "prism", "-highlight", "github", "tonic", "gist", "sitemap", "-search", "addcssjs"], 
 	"pluginsConfig":
@@ -22,15 +22,15 @@
 		"edit-link":
 		{
 			"_comment-base":"github.com/username/repo",
-			"_commentedOut-base":"github.com/dahukanna/gitbooktest",
-			"base":"github.com/dahukanna/gitbooktest",
+			"_commentedOut-base":"github.com/biovisualize/try-datavis-now",
+			"base":"github.com/biovisualize/try-datavis-now",
 			"label":"Edit This Page"
 		},
 		"github":
 		{
 			"_comment-url":"https or http://github.com/username/repo",
-			"_commentedOut-url":"https://github.com/dahukanna/gitbooktest",
-			"url": "https://github.com/dahukanna/gitbooktest"
+			"_commentedOut-url":"https://github.com/biovisualize/try-datavis-now",
+			"url": "https://github.com/biovisualize/try-datavis-now"
 		},
 		"sitemap": 
 		{
