@@ -1,0 +1,482 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>A datavis grammar · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="graphics.html" />
+    
+    
+    <link rel="prev" href="pipeline.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Datavis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="learning-datavis.html">
+            
+                <a href="learning-datavis.html">
+            
+                    
+                    Learning datavis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="workflow.html">
+            
+                <a href="workflow.html">
+            
+                    
+                    Datavis workflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="pipeline.html">
+            
+                <a href="pipeline.html">
+            
+                    
+                    A datavis pipeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.4" data-path="grammar.html">
+            
+                <a href="grammar.html">
+            
+                    
+                    A datavis grammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="graphics.html">
+            
+                <a href="graphics.html">
+            
+                    
+                    Type of graphics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="apps.html">
+            
+                <a href="apps.html">
+            
+                    
+                    Datavis apps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="programming.html">
+            
+                <a href="programming.html">
+            
+                    
+                    Datavis programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="web-technologies.html">
+            
+                <a href="web-technologies.html">
+            
+                    
+                    Web technologies
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter-2/">
+            
+                <a href="../chapter-2/">
+            
+                    
+                    D3.js
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter-2/d3-tools.html">
+            
+                <a href="../chapter-2/d3-tools.html">
+            
+                    
+                    D3 modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter-2/community.html">
+            
+                <a href="../chapter-2/community.html">
+            
+                    
+                    Get started
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >A datavis grammar</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="visual-grammar">Visual grammar</h1>
+<h2 id="bertins-visual-grammar">Bertin&apos;s visual grammar</h2>
+<p>The previous grammar is an expansion of Bertin&apos;s simpler grammar. His book <a href="http://www.amazon.com/Semiology-Graphics-Diagrams-Networks-Maps/dp/1589482611/ref=asap_bc?ie=UTF8" _target="blank">Semiology of graphics</a> is a must-read. </p>
+<p>According to Bertin, the two planar dimensions are the most important visual variables, then come size, value, texture, color, orientation, shape. </p>
+<h3 id="the-structure-of-information-visualization-design-space-pdf">The structure of Information Visualization Design Space <a href="http://faculty.utpa.edu/fowler/vis-papers/Card-Mackinlay_1997_Structure-of-IV-Design-Space.pdf" _target="blank">pdf</a></h3>
+<p>This paper describes how to map data types (e.g. ordinal, categorical, numerical) to graphical variables</p>
+<table>
+  <colgroup span="4"></colgroup>
+  <colgroup span="1"></colgroup>
+  <colgroup span="6"></colgroup>
+  <colgroup span="2"></colgroup>
+  <tr>
+    <th colspan="4" scope="colgroup">Data</th>
+    <th colspan="1" scope="colgroup">Controlled</th>
+    <th colspan="6" scope="colgroup">Automatic</th>
+    <th colspan="2" scope="colgroup">Interaction</th>
+  </tr>
+  <tr>
+    <td>Variable</td>
+    <td>D</td>
+    <td>F</td>
+    <td>D&apos;</td>
+    <td>CP</td>
+    <td>M</td>
+    <td>R</td>
+    <td>X</td>
+    <td>Y</td>
+    <td>Z</td>
+    <td>T</td>
+    <td>V</td>
+    <td>W</td>
+  </tr>
+    <tr>
+    <td>&#xA0;</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+</table> 
+
+<p>Symbol Meaning<br>D: Data Type e.g. Nominal, Ordinal, Quantitative, Spatial, Geographical, Graphs<br>F: Function for recoding data e.g. filter, sorting<br>D&#x2019;: Recoded Data Type (see D)<br>CP: Control Processing tx (text)<br>M: Mark types e.g. Point, Line, Surface, Area, Volume<br>R: Retinal properties e.g. Color, Size, Connection, Enclosure<br>XYZT: Position in space time<br>V: View transformation e.g. hyperbolic mapping<br>W: Widget e.g. slider, radio buttons</p>
+<p>Grammar<br>Marks: (Point, Line, Area, Surface, Volume)<br>Controlled Processing Graphical Features<br>Automatically Processed Graphical Properties<br>Retinal encodings: (Color, Size, Shape, Gray-level, Orientation, Texture, Connection, Enclosure)<br>Position: (X, Y, Z, T)</p>
+<p><img src="../img/connectedcharts.png" height="500"></p>
+<h2 id="a-simplified-grammar">A simplified grammar</h2>
+<p>Here is a somewhat simplified grammar that is a practical subset to design datavis.</p>
+<p>Data types (taken from <a href="http://profs.etsmtl.ca/mmcguffin/research/2012-viau-connectedCharts/viau-eurovis2012-connectedCharts.pdf" _target="blank">pdf</a>): <strong>categorical</strong>, <strong>quantitative</strong>, <strong>constant</strong><br>Graphical variables: <strong>x</strong>, <strong>y</strong>, <strong>size</strong>, <strong>angle</strong>, <strong>color</strong><br>Assembly strategies: <strong>adjacency</strong>, <strong>nesting</strong>, <strong>linking</strong></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="pipeline.html" class="navigation navigation-prev " aria-label="Previous page: A datavis pipeline">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="graphics.html" class="navigation navigation-next " aria-label="Next page: Type of graphics">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"A datavis grammar","level":"1.2.4","depth":2,"next":{"title":"Type of graphics","level":"1.2.5","depth":2,"path":"chapter-1/graphics.md","ref":"chapter-1/graphics.md","articles":[]},"previous":{"title":"A datavis pipeline","level":"1.2.3","depth":2,"path":"chapter-1/pipeline.md","ref":"chapter-1/pipeline.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github","tonic","gist","sitemap","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"gist":{},"github":{"_comment-url":"https or http://github.com/username/repo","_commentedOut-url":"https://github.com/biovisualize/try-datavis-now","url":"https://github.com/biovisualize/try-datavis-now"},"livereload":{},"search":{},"addcssjs":{"_comment-js":"","js":["js/custom.js"],"_comment-css":"","css":["css/custom.css"]},"lunr":{"maxIndexSize":1000000},"tonic":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://mybook.com/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"_comment-base":"github.com/username/repo","_commentedOut-base":"github.com/biovisualize/try-datavis-now","base":"github.com/biovisualize/try-datavis-now","label":"Edit This Page"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"_comment-plugins":{"prism":" For syntax highlighting.","gist":"Embeds github gists","github":" Adds github icon to top right hand corner of the page.","-highlight":" For syntax highlighting.","addcssjs":"Add external css and js files to gitbook - plugins.gitbook.com/plugin/addcssjs","tonic":"nodejs repl in the browser","-search":" .","sitemap":" .","edit-link":"Adds 'Edit this page link and icon'."},"variables":{},"gitbook":">= 3.0.0"},"file":{"path":"chapter-1/grammar.md","mtime":"2016-06-01T22:05:45.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-06-01T21:36:29.119Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="https://embed.tonicdev.com"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-tonic/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.4/gist-embed.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-gist/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

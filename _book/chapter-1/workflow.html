@@ -1,0 +1,525 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Datavis workflow · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="pipeline.html" />
+    
+    
+    <link rel="prev" href="learning-datavis.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Datavis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="learning-datavis.html">
+            
+                <a href="learning-datavis.html">
+            
+                    
+                    Learning datavis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="workflow.html">
+            
+                <a href="workflow.html">
+            
+                    
+                    Datavis workflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="pipeline.html">
+            
+                <a href="pipeline.html">
+            
+                    
+                    A datavis pipeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="grammar.html">
+            
+                <a href="grammar.html">
+            
+                    
+                    A datavis grammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="graphics.html">
+            
+                <a href="graphics.html">
+            
+                    
+                    Type of graphics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="apps.html">
+            
+                <a href="apps.html">
+            
+                    
+                    Datavis apps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="programming.html">
+            
+                <a href="programming.html">
+            
+                    
+                    Datavis programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="web-technologies.html">
+            
+                <a href="web-technologies.html">
+            
+                    
+                    Web technologies
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../chapter-2/">
+            
+                <a href="../chapter-2/">
+            
+                    
+                    D3.js
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../chapter-2/d3-tools.html">
+            
+                <a href="../chapter-2/d3-tools.html">
+            
+                    
+                    D3 modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../chapter-2/community.html">
+            
+                <a href="../chapter-2/community.html">
+            
+                    
+                    Get started
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Datavis workflow</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="find-your-place-in-the-workflow">Find your place in the workflow</h1>
+<h2 id="specialties">Specialties</h2>
+<p><strong>What type of designer are you?</strong> Datavis design can mean multiple things. Some focus can be on <strong>graphic design</strong>, <strong>user experience</strong> (UX), <strong>software engineering</strong>, <strong>data science</strong> or some <strong>domain specific</strong> expertise. All these specialties can play a role on different stages of the development process. I saw some designers drawing pixel-perfect mockups to help with product ideation. Their work was only seen by some product managers to help them decide on the features. Then another type of designer would turn these mockups into UIs and assets ready for implementation. Some will design directly in HTML/CSS/SVG, so they are closer to UI implementation. Another type of designer I see less often is UX designer. They know for example how to sketch wireframes, design components and user flow, they understand the human factor. In my opinion, you can succeed with a good UX even if you have a bad UI, but no UI can compensate for a bad UX. So UI, UX and graphic design are different and play different roles. I saw some UX designers stuck doing marketing websites and datavis engineers building plain frontend because they were not able to explain the difference. And, just to make it more complicated, datavis design can be a mix of all those type of design. So it&apos;s important for a designer to be clear about the exact skill set he has, to find the place he wants in the workflow.</p>
+<h2 id="products">Products</h2>
+<p>It&apos;s also important to know about the <strong>workflow</strong> and how a datavis designer can have the most impact. The development workflow will be different if the product is an app, a framework, or an infographics. Some datavis products will be consumer facing applications, but a lot of companies, like service companies, also need datavis for monitoring systems, for taking data-driven decisions, for internal communication, etc. To give a broad categorization, we could say that some products are made for <strong>discovery</strong>, other for <strong>communication</strong> and other for <strong>supporting decision-making</strong>. Skills for communication are very different than mastery of statistics for example. But datavis designers often combine multiple of these seemingly unrelated talents, so they may have to find a weird title for their role and a new way to integrate in the pipeline.</p>
+<p>The development workflow also depends on multiple factor like the size of the company, the domain and the business model. A datavis consulting startup is different than a business intelligence software megacompany. So how does a datavis designer finds his place in a development team? Let&apos;s first describe a typical development workflow that is generic enough to be useful to describe a lot of cases.</p>
+<h2 id="workflow">Workflow</h2>
+<p>One example of an Agile workflow:</p>
+<ul>
+<li>Product owner: user stories</li>
+<li>Product manager: listing requirements, breaking them down into tasks</li>
+<li>Designer: wireframes and mockups</li>
+<li>Developers: products</li>
+<li>QA: tests</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Deliverable</th>
+<th>Typical Role</th>
+<th>Datavis role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>User stories</td>
+<td>Prioritized story list</td>
+<td>Product owner</td>
+<td>Brainstorming</td>
+</tr>
+<tr>
+<td>User Experience</td>
+<td>Wireframes</td>
+<td>UX designer</td>
+<td>Datavis design</td>
+</tr>
+<tr>
+<td>Requirements</td>
+<td>Spec sheet</td>
+<td>Product manager</td>
+<td>Choice of tools</td>
+</tr>
+<tr>
+<td>UI design</td>
+<td>Mockup</td>
+<td>Graphic designer</td>
+<td>Best practices</td>
+</tr>
+<tr>
+<td>Tasks</td>
+<td>Task list</td>
+<td>Production manager</td>
+<td>Syncing</td>
+</tr>
+<tr>
+<td>Implementation</td>
+<td>MVP</td>
+<td>Team members</td>
+<td>Syncing</td>
+</tr>
+<tr>
+<td>QA</td>
+<td>Tests, CI, reports</td>
+<td>QA</td>
+<td>User tests</td>
+</tr>
+</tbody>
+</table>
+<h3 id="user-stories">User stories</h3>
+<p>A typical workflow starts with gathering the user stories, a description of the user needs. They illustrate some user needs as a set of high level requirements. A datavis designer is used to looking at data and functional tasks and see how they relate to use cases and user flows. He is often strong in building communication tools and bringing a set of functional requirements to a meaningful shape. So he can sit down with the product owner and brainstorm with him, sketching some very high level <strong>wireframes</strong>, just to make sure the right needs are identified and that the story list describes a complete minimal viable product. </p>
+<h3 id="user-experience">User Experience</h3>
+<p>The datavis designer strong in user flow and information architecture can play an important role in UX design. The challenge at this stage is to get just enough visuals for designing how the user stories could be turned into a consistent experience, but without getting into graphic design or into functional requirements. We need some sort of <strong>storyboarding</strong> to refine the user stories. Wireframes are better to use at this point than pixel-perfect mockups, so ideas can be iterated on quickly without getting distracted by graphical choices. Wireframes can look sketchy or technical, to make sure they are not confused with what the actual product could look like. <strong>Information architecture</strong> techniques, like card sorting or flow diagrams, are nice ways to abstract the UX tasks from graphical design.</p>
+<h3 id="requirements">Requirements</h3>
+<p>Once UX design gave some kind of storyboarding to the user stories, each story can be translated to technical requirements. Typically, the product manager consult with the team to sort the stories into epics and to choose the <strong>technology stack</strong>. The datavis designer stronger in engineering can help choose the technologies, since he most often has to integrate multiple layers of technologies from database to backend to frontend. It&apos;s also useful for every developers to take ownership of some epics. The datavis designer can own any datavis epics but also oversee the whole data pipeline for example.</p>
+<h3 id="ui-design">UI design</h3>
+<p>I see a lot of datavis designers focusing on graphical design, most often coming from <strong>graphical design</strong> and specializing in human factor and datavis.</p>
+<h3 id="tasks">Tasks</h3>
+<p>The production manager helps the team to break down the epics into tasks. The datavis designer can help with <strong>syncing</strong> the tasks together as he is often kind of the user of the whole pipeline.</p>
+<h3 id="qa">QA</h3>
+<p>Datavis typically <strong>exposes</strong> the result of the whole pipeline. If something breaks anywhere in the stack, the datavis will break, if it doesn&apos;t gracefully degrade. So it&apos;s important to install a QA process to monitor failures, but also to be able to trace back on the layer that broke. If it&apos;s impossible to prevent the failure, the UI will need to notify the user in a meaningful and actionable way and stay responsive and as useful as possible. </p>
+<hr>
+<p>Example of a datavis design workflow and its deliverables
+User stories are very high level. For example, &quot;the user needs to be notified under 5 minutes when electric current goes over a threshold&quot; is more suitable as a story than &quot;the user needs a line graph with a threshold line that blinks if electric current&quot;. A datavis developer can get involved at this point for his drawing and mind-mapping skills or UX skills, even if it&apos;s not the right stage to think about graphics. He can also get involved because he knows how to tell a story from data. </p>
+<hr>
+<p>A data vis designer can combine various skills:</p>
+<ul>
+<li>Looking at data and functional requirements, and seeing use cases and useful tools </li>
+<li>Brainstorming, mindmapping, wireframing</li>
+<li>User experience, information architecture</li>
+<li>Visual communication</li>
+<li>Choosing and integrating a technology stack</li>
+<li>Designing components, layouts and a consistent set of views</li>
+<li>Designing graphics, assets, communication elements</li>
+<li>Building visual and interactive tools</li>
+<li>QA, user tests, user interviews</li>
+<li>Marketing, outreach, user success</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="learning-datavis.html" class="navigation navigation-prev " aria-label="Previous page: Learning datavis">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="pipeline.html" class="navigation navigation-next " aria-label="Next page: A datavis pipeline">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Datavis workflow","level":"1.2.2","depth":2,"next":{"title":"A datavis pipeline","level":"1.2.3","depth":2,"path":"chapter-1/pipeline.md","ref":"chapter-1/pipeline.md","articles":[]},"previous":{"title":"Learning datavis","level":"1.2.1","depth":2,"path":"chapter-1/learning-datavis.md","ref":"chapter-1/learning-datavis.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github","tonic","gist","sitemap","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"gist":{},"github":{"_comment-url":"https or http://github.com/username/repo","_commentedOut-url":"https://github.com/biovisualize/try-datavis-now","url":"https://github.com/biovisualize/try-datavis-now"},"livereload":{},"search":{},"addcssjs":{"_comment-js":"","js":["js/custom.js"],"_comment-css":"","css":["css/custom.css"]},"lunr":{"maxIndexSize":1000000},"tonic":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://mybook.com/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"_comment-base":"github.com/username/repo","_commentedOut-base":"github.com/biovisualize/try-datavis-now","base":"github.com/biovisualize/try-datavis-now","label":"Edit This Page"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"_comment-plugins":{"prism":" For syntax highlighting.","gist":"Embeds github gists","github":" Adds github icon to top right hand corner of the page.","-highlight":" For syntax highlighting.","addcssjs":"Add external css and js files to gitbook - plugins.gitbook.com/plugin/addcssjs","tonic":"nodejs repl in the browser","-search":" .","sitemap":" .","edit-link":"Adds 'Edit this page link and icon'."},"variables":{},"gitbook":">= 3.0.0"},"file":{"path":"chapter-1/workflow.md","mtime":"2016-06-01T11:00:39.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-06-01T21:36:29.119Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="https://embed.tonicdev.com"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-tonic/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.4/gist-embed.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-gist/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

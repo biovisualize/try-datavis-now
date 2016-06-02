@@ -1,0 +1,435 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>D3.js · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.0.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../styles/website.css">
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="d3-tools.html" />
+    
+    
+    <link rel="prev" href="../chapter-1/web-technologies.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../chapter-1/">
+            
+                <a href="../chapter-1/">
+            
+                    
+                    Datavis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../chapter-1/learning-datavis.html">
+            
+                <a href="../chapter-1/learning-datavis.html">
+            
+                    
+                    Learning datavis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../chapter-1/workflow.html">
+            
+                <a href="../chapter-1/workflow.html">
+            
+                    
+                    Datavis workflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../chapter-1/pipeline.html">
+            
+                <a href="../chapter-1/pipeline.html">
+            
+                    
+                    A datavis pipeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../chapter-1/grammar.html">
+            
+                <a href="../chapter-1/grammar.html">
+            
+                    
+                    A datavis grammar
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../chapter-1/graphics.html">
+            
+                <a href="../chapter-1/graphics.html">
+            
+                    
+                    Type of graphics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="../chapter-1/apps.html">
+            
+                <a href="../chapter-1/apps.html">
+            
+                    
+                    Datavis apps
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../chapter-1/programming.html">
+            
+                <a href="../chapter-1/programming.html">
+            
+                    
+                    Datavis programming
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.8" data-path="../chapter-1/web-technologies.html">
+            
+                <a href="../chapter-1/web-technologies.html">
+            
+                    
+                    Web technologies
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    D3.js
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="d3-tools.html">
+            
+                <a href="d3-tools.html">
+            
+                    
+                    D3 modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="community.html">
+            
+                <a href="community.html">
+            
+                    
+                    Get started
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >D3.js</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="d3-design-philosophy">D3 design philosophy</h2>
+<p>D3 is really just a <strong>thin layer</strong> to help you use web technologies. There&apos;s no magic in D3. We often see the question: &quot;can I do this with D3?&quot; The answer usually is: if you can do it with web technologies, D3 will just help you do it more efficiently. </p>
+<p>D3 has a reputation of being difficult to learn. It&apos;s only partly true. First, it uses some <strong><a href="http://eloquentjavascript.net/1st_edition/chapter6.html" _target="blank">functional patterns</a></strong>, not really the hardcore functional stuff, but still more difficult to learn when you come from an object-oriented mindset for example. But Javascript is pretty powerful as a functional language so it totally worth learning it. A good place to start is with <a href="http://shop.oreilly.com/product/0636920028857.do" _target="blank">this book</a>.</p>
+<p>Second, D3 is a set of tools, so you need to know how to use them together. You can find plenty of <strong><a href="https://bost.ocks.org/mike/example/" _target="blank">examples</a></strong> and <a href="https://github.com/d3/d3/wiki/API-Reference" _target="blank">documentation</a>, but there are so many combinations and use cases that they can&apos;t all be covered. And the examples doesn&apos;t help much when you need to get to the next level, like packaging charts, pipe in your own data, integrate them into an app, etc.</p>
+<p>Third, people often start with D3 before <strong>learning the basics</strong>. So a lot of questions are answered by referring people to the main CSS, HTML, Javascript and especially DOM documentations.</p>
+<p>Fourth, D3 is often confused with abstraction libraries like jQuery or Raphael.js. But it&apos;s <strong>not an abstraction</strong>. It&apos;s also not a framework. In fact, it&apos;s often described by a lots of things it is not. </p>
+<p>Also, my personal opinion is that even though the enter-update-exit pattern and the whole data-binding pattern is a fundamental piece of D3, it may not be the best place to start. That contradicts most of the tutorials and books you can see out there. But let&apos;s try it and see where an <strong>alternative learning path</strong> would lead.</p>
+<p><a href="http://vis.stanford.edu/files/2011-D3-InfoVis.pdf" _target="blank">D3.js paper</a><br></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../chapter-1/web-technologies.html" class="navigation navigation-prev " aria-label="Previous page: Web technologies">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="d3-tools.html" class="navigation navigation-next " aria-label="Next page: D3 modules">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"D3.js","level":"1.3","depth":1,"next":{"title":"D3 modules","level":"1.3.1","depth":2,"path":"chapter-2/d3-tools.md","ref":"chapter-2/d3-tools.md","articles":[]},"previous":{"title":"Web technologies","level":"1.2.8","depth":2,"path":"chapter-1/web-technologies.md","ref":"chapter-1/web-technologies.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github","tonic","gist","sitemap","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"gist":{},"github":{"_comment-url":"https or http://github.com/username/repo","_commentedOut-url":"https://github.com/biovisualize/try-datavis-now","url":"https://github.com/biovisualize/try-datavis-now"},"livereload":{},"search":{},"addcssjs":{"_comment-js":"","js":["js/custom.js"],"_comment-css":"","css":["css/custom.css"]},"lunr":{"maxIndexSize":1000000},"tonic":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://mybook.com/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"_comment-base":"github.com/username/repo","_commentedOut-base":"github.com/biovisualize/try-datavis-now","base":"github.com/biovisualize/try-datavis-now","label":"Edit This Page"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"_comment-plugins":{"prism":" For syntax highlighting.","gist":"Embeds github gists","github":" Adds github icon to top right hand corner of the page.","-highlight":" For syntax highlighting.","addcssjs":"Add external css and js files to gitbook - plugins.gitbook.com/plugin/addcssjs","tonic":"nodejs repl in the browser","-search":" .","sitemap":" .","edit-link":"Adds 'Edit this page link and icon'."},"variables":{},"gitbook":">= 3.0.0"},"file":{"path":"chapter-2/README.md","mtime":"2016-05-31T14:32:03.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-06-01T21:36:29.119Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-edit-link/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="https://embed.tonicdev.com"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-tonic/plugin.js"></script>
+        
+    
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.4/gist-embed.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-gist/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+
