@@ -1,0 +1,43 @@
+{
+	"gitbook":">= 3.0.0",
+	"_comment-plugins":
+	{
+		"edit-link":"Adds 'Edit this page link and icon'.",
+		"github":" Adds github icon to top right hand corner of the page.",
+		"tonic":"nodejs repl in the browser",
+		"gist":"Embeds github gists",
+		"prism":" For syntax highlighting.",
+		"-highlight":" For syntax highlighting.",
+		"sitemap":" .",
+		"-search":" .",
+		"addcssjs":"Add external css and js files to gitbook - plugins.gitbook.com/plugin/addcssjs"
+	},
+	"plugins":["edit-link", "prism", "-highlight", "github", "tonic", "gist", "sitemap"], 
+	"pluginsConfig":
+	{
+		"edit-link":
+		{
+			"_comment-base":"github.com/username/repo",
+			"_commentedOut-base":"github.com/biovisualize/try-datavis-now",
+			"base":"github.com/biovisualize/try-datavis-now",
+			"label":"Edit This Page"
+		},
+		"github":
+		{
+			"_comment-url":"https or http://github.com/username/repo",
+			"_commentedOut-url":"https://github.com/biovisualize/try-datavis-now",
+			"url": "https://github.com/biovisualize/try-datavis-now"
+		},
+		"sitemap": 
+		{
+    	"hostname": "http://mybook.com/"
+    },
+    "addcssjs": 
+    {
+    	"_comment-js":"",
+    	"js": ["js/custom.js"],
+    	"_comment-css":"",
+    	"css": ["css/custom.css"]
+  	}
+	}
+}
