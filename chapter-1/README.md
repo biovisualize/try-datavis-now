@@ -1,1 +1,3 @@
-Here I'm just getting started with Gitbook
+# Learn datavis before learning the tools
+
+**Datavis is the art and science of turning data into graphics**, using a visual language to help a user extract useful information from his data. A lot of good books will describe it better than I do. But another definition I would bring is: datavis is what a datavis designer does. I will try to describe datavis from its practice. Basically, starting from my own experience, I want to explain the part they don't tell us at school.

@@ -12,7 +12,7 @@
 		"-search":" .",
 		"addcssjs":"Add external css and js files to gitbook - plugins.gitbook.com/plugin/addcssjs"
 	},
-	"plugins":["edit-link", "prism", "-highlight", "github", "tonic", "gist", "sitemap", "-search", "addcssjs"], 
+	"plugins":["edit-link", "prism", "-highlight", "github", "tonic", "gist", "sitemap"], 
 	"pluginsConfig":
 	{
 		"edit-link":
