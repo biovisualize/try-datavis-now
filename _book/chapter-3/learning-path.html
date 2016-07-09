@@ -2,7 +2,7 @@
 <!DOCTYPE HTML>
 <html lang="" >
     <head>
-        <title>D3.js · GitBook</title>
+        <title>Learning path · GitBook</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -59,10 +59,8 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="charts-library.html" />
     
-    
-    <link rel="prev" href="../chapter-2/javascript.html" />
+    <link rel="prev" href="d3-tools.html" />
     
 
     </head>
@@ -318,7 +316,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.2" data-path="./">
+        <li class="chapter " data-level="2.2" data-path="./">
             
                 <a href="./">
             
@@ -371,7 +369,7 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.4" data-path="learning-path.html">
+        <li class="chapter active" data-level="2.2.4" data-path="learning-path.html">
             
                 <a href="learning-path.html">
             
@@ -419,7 +417,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >D3.js</a>
+        <a href=".." >Learning path</a>
     </h1>
 </div>
 
@@ -434,14 +432,36 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h2 id="d3-design-philosophy">D3 design philosophy</h2>
-<p>D3 is really just a <strong>thin layer</strong> to help you use web technologies. There&apos;s no magic in D3. We often see the question: &quot;can I do this with D3?&quot; The answer usually is: if you can do it with web technologies, D3 will just help you do it more efficiently. </p>
-<p>D3 has a reputation of being difficult to learn. It&apos;s only partly true. First, it uses some <strong><a href="http://eloquentjavascript.net/1st_edition/chapter6.html" _target="blank">functional patterns</a></strong>, not really the hardcore functional stuff, but still more difficult to learn when you come from an object-oriented mindset for example. But Javascript is pretty powerful as a functional language so it totally worth learning it. A good place to start is with <a href="http://shop.oreilly.com/product/0636920028857.do" _target="blank">this book</a>.</p>
-<p>Second, D3 is a set of tools, so you need to know how to use them together. You can find plenty of <strong><a href="https://bost.ocks.org/mike/example/" _target="blank">examples</a></strong> and <a href="https://github.com/d3/d3/wiki/API-Reference" _target="blank">documentation</a>, but there are so many combinations and use cases that they can&apos;t all be covered. And the examples doesn&apos;t help much when you need to get to the next level, like packaging charts, pipe in your own data, integrate them into an app, etc.</p>
-<p>Third, people often start with D3 before <strong>learning the basics</strong>. So a lot of questions are answered by referring people to the main CSS, HTML, Javascript and especially DOM documentations.</p>
-<p>Fourth, D3 is often confused with abstraction libraries like jQuery or Raphael.js. But it&apos;s <strong>not an abstraction</strong>. It&apos;s also not a framework. In fact, it&apos;s often described by a lots of things it is not. </p>
-<p>Also, my personal opinion is that even though the enter-update-exit pattern and the whole data-binding pattern is a fundamental piece of D3, it may not be the best place to start. That contradicts most of the tutorials and books you can see out there. But let&apos;s try it and see where an <strong>alternative learning path</strong> would lead.</p>
-<p><a href="http://vis.stanford.edu/files/2011-D3-InfoVis.pdf" _target="blank">D3.js paper</a><br></p>
+                                <h1 id="learning-path">Learning path</h1>
+<p><a class="jsbin-embed" href="http://jsbin.com/qojugi/embed?html,output&amp;height=500px" _target="blank"> on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.36.11"></script></p>
+<h2 id="d3selection">d3.selection</h2>
+<pre><code class="lang-javascript">d3<span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">&apos;.first&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token string">&apos;color&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;red&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+d3<span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">&apos;.first&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">attr</span><span class="token punctuation">(</span><span class="token string">&apos;id&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;foo&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<pre><code class="lang-javascript">d3<span class="token punctuation">.</span><span class="token function">selectAll</span><span class="token punctuation">(</span><span class="token string">&apos;div&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">style</span><span class="token punctuation">(</span><span class="token string">&apos;color&apos;</span><span class="token punctuation">,</span> <span class="token string">&apos;red&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<pre><code class="lang-javascript">d3<span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">&apos;.first&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token string">&apos;The First Box!&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+d3<span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">&apos;.first&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">html</span><span class="token punctuation">(</span><span class="token string">&apos;&lt;h1&gt;The First Box!&lt;/h1&gt;&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<pre><code class="lang-javascript">d3<span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">&apos;.first&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">&apos;h2&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token string">&apos;title&apos;</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<pre><code class="lang-javascript">d3<span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">&apos;.first&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">&apos;h2&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+d3<span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">&apos;.first h2&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<pre><code class="lang-javascript"><span class="token keyword">var</span> data <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+data<span class="token punctuation">.</span><span class="token function">forEach</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>d<span class="token punctuation">)</span><span class="token punctuation">{</span>
+    d3<span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">&apos;.first&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">&apos;p&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token string">&apos;paragraph &apos;</span> <span class="token operator">+</span> d<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<pre><code class="lang-javascript"><span class="token keyword">var</span> data <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+d3<span class="token punctuation">.</span><span class="token function">select</span><span class="token punctuation">(</span><span class="token string">&apos;.first&apos;</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">selectAll</span><span class="token punctuation">(</span><span class="token string">&apos;p&apos;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">data</span><span class="token punctuation">(</span>data<span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">enter</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token string">&apos;p&apos;</span><span class="token punctuation">)</span>
+    <span class="token punctuation">.</span><span class="token function">text</span><span class="token punctuation">(</span><span class="token string">&apos;paragraph &apos;</span> <span class="token operator">+</span> d<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
 
                                 
                                 </section>
@@ -469,14 +489,10 @@
 
             
                 
-                <a href="../chapter-2/javascript.html" class="navigation navigation-prev " aria-label="Previous page: Javascript">
+                <a href="d3-tools.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: D3 modules">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
-                
-                <a href="charts-library.html" class="navigation navigation-next " aria-label="Next page: D3 charts libraries">
-                    <i class="fa fa-angle-right"></i>
-                </a>
                 
             
         
@@ -485,7 +501,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"D3.js","level":"2.2","depth":1,"next":{"title":"D3 charts libraries","level":"2.2.1","depth":2,"path":"chapter-3/charts-library.md","ref":"chapter-3/charts-library.md","articles":[]},"previous":{"title":"Javascript","level":"2.1.6","depth":2,"path":"chapter-2/javascript.md","ref":"chapter-2/javascript.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github","tonic","gist","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"gist":{},"github":{"_comment-url":"https or http://github.com/username/repo","_commentedOut-url":"https://github.com/biovisualize/try-datavis-now","url":"https://github.com/biovisualize/try-datavis-now"},"livereload":{},"search":{},"addcssjs":{"_comment-js":"","js":["js/custom.js"],"_comment-css":"","css":["css/custom.css"]},"lunr":{"maxIndexSize":1000000},"tonic":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"_comment-base":"github.com/username/repo","_commentedOut-base":"github.com/biovisualize/try-datavis-now","base":"github.com/biovisualize/try-datavis-now","label":"Edit This Page"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"_comment-plugins":{"edit-link":"Adds 'Edit this page link and icon'.","github":" Adds github icon to top right hand corner of the page.","tonic":"nodejs repl in the browser","gist":"Embeds github gists","prism":" For syntax highlighting.","-highlight":" For syntax highlighting."},"variables":{},"gitbook":">= 3.0.0"},"file":{"path":"chapter-3/README.md","mtime":"2016-06-02T04:46:50.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-07-09T13:29:53.098Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Learning path","level":"2.2.4","depth":2,"previous":{"title":"D3 modules","level":"2.2.3","depth":2,"path":"chapter-3/d3-tools.md","ref":"chapter-3/d3-tools.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github","tonic","gist","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"gist":{},"github":{"_comment-url":"https or http://github.com/username/repo","_commentedOut-url":"https://github.com/biovisualize/try-datavis-now","url":"https://github.com/biovisualize/try-datavis-now"},"livereload":{},"search":{},"addcssjs":{"_comment-js":"","js":["js/custom.js"],"_comment-css":"","css":["css/custom.css"]},"lunr":{"maxIndexSize":1000000},"tonic":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"_comment-base":"github.com/username/repo","_commentedOut-base":"github.com/biovisualize/try-datavis-now","base":"github.com/biovisualize/try-datavis-now","label":"Edit This Page"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"_comment-plugins":{"edit-link":"Adds 'Edit this page link and icon'.","github":" Adds github icon to top right hand corner of the page.","tonic":"nodejs repl in the browser","gist":"Embeds github gists","prism":" For syntax highlighting.","-highlight":" For syntax highlighting."},"variables":{},"gitbook":">= 3.0.0"},"file":{"path":"chapter-3/learning-path.md","mtime":"2016-07-09T04:49:21.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-07-09T13:29:53.098Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

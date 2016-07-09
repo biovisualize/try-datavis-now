@@ -59,10 +59,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="dom.html" />
+    <link rel="next" href="../chapter-3/" />
     
     
-    <link rel="prev" href="canvas.html" />
+    <link rel="prev" href="dom.html" />
     
 
     </head>
@@ -287,12 +287,12 @@
             
         </li>
     
-        <li class="chapter active" data-level="2.1.5" data-path="javascript.html">
+        <li class="chapter " data-level="2.1.5" data-path="dom.html">
             
-                <a href="javascript.html">
+                <a href="dom.html">
             
                     
-                    Javascript
+                    DOM
             
                 </a>
             
@@ -300,12 +300,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.6" data-path="dom.html">
+        <li class="chapter active" data-level="2.1.6" data-path="javascript.html">
             
-                <a href="dom.html">
+                <a href="javascript.html">
             
                     
-                    DOM
+                    Javascript
             
                 </a>
             
@@ -332,12 +332,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.2.1" data-path="../chapter-3/d3-tools.html">
+        <li class="chapter " data-level="2.2.1" data-path="../chapter-3/charts-library.html">
             
-                <a href="../chapter-3/d3-tools.html">
+                <a href="../chapter-3/charts-library.html">
             
                     
-                    D3 modules
+                    D3 charts libraries
             
                 </a>
             
@@ -358,12 +358,25 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.3" data-path="../chapter-3/charts-library.html">
+        <li class="chapter " data-level="2.2.3" data-path="../chapter-3/d3-tools.html">
             
-                <a href="../chapter-3/charts-library.html">
+                <a href="../chapter-3/d3-tools.html">
             
                     
-                    D3 charts libraries
+                    D3 modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../chapter-3/learning-path.html">
+            
+                <a href="../chapter-3/learning-path.html">
+            
+                    
+                    Learning path
             
                 </a>
             
@@ -423,30 +436,14 @@
                                 
                                 <h1 id="javascript">Javascript</h1>
 <p>Javascript is the scripting language hosted by your browser. It can automate lots of things, like manipulating the document, add/remove/modify HTML/SVG/CSS elements. </p>
+<p><a class="jsbin-embed" href="http://jsbin.com/dacupu/embed?html,output&amp;height=500px" _target="blank"> on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.36.11"></script></p>
 <pre><code class="lang-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>utf-8<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>lib/d3.js<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span>
-            .foo {
-                font-style: italic;
-            }
-            .bar {
-                fill: red;
-                stroke: white;
-            }
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>container<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">&gt;</span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">&gt;</span></span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Paragraph<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Paragraph with text in <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>foo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>italic<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>297mm<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>210mm<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
-                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>60<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>50<span class="token punctuation">&quot;</span></span> <span class="token attr-name">stroke</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>#000<span class="token punctuation">&quot;</span></span> <span class="token attr-name">y</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>6<span class="token punctuation">&quot;</span></span> <span class="token attr-name">x</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>7<span class="token punctuation">&quot;</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>#f00<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span>
-                 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>bar<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>60<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>50<span class="token punctuation">&quot;</span></span> <span class="token attr-name">y</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>6<span class="token punctuation">&quot;</span></span> <span class="token attr-name">x</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>7<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
-            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
-        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>297mm<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>210mm<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>bar<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>60<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>50<span class="token punctuation">&quot;</span></span> <span class="token attr-name">y</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>6<span class="token punctuation">&quot;</span></span> <span class="token attr-name">x</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>7<span class="token punctuation">&quot;</span></span> <span class="token punctuation">/&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
 
          document.querySelector(&apos;.bar&apos;).style.fill = &apos;skyblue&apos;;
@@ -455,6 +452,42 @@
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
+<p>A good way to learn Javascript is with the <a href="https://www.codecademy.com/learn/javascript" _target="blank">Codecademy</a> class or the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide" _target="blank">Mozilla Javascript guide</a>.</p>
+<p>This is the bare minimum to survive in Javascript world:</p>
+<pre><code class="lang-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">&gt;</span></span>
+
+// this is a comment
+
+// this is a variable named &quot;foo&quot; containing the value 1
+var foo = 1;
+
+// this is an array named &quot;bar&quot; containing a series of numbers
+var bar = [1, 2, 3, 4];
+
+// this is an object named &quot;baz&quot; containing a serie of key:value pairs
+var baz = {a: 1, b: 2};
+
+// you can access every value by key
+var bazA = baz.a;
+// or the equivalent
+var bazA = baz[&apos;a&apos;];
+
+// this is a function named &quot;aaa&quot; expecting an argument 
+// and returning the value of this argument + 1
+function aaa(d){
+    return d + 1;
+}
+
+// this is an example of how you use it
+var result = aaa(2);
+
+// and you can all use them together
+var something = [{a: function(d){ return d + &apos;px&apos;; }}, 10, baz.a, aaa(10)];
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>All of these variables, functions, arrays, strings, numbers, etc. are <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects" _target="blank">objects</a>. They all have an associated <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Working_with_Objects" _target="blank">object tree</a> that looks like the DOM (in fact, there are also some <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String#Distinction_between_string_primitives_and_String_objects" _target="blank">primitives</a> that are wrapped into objects). You can look at their structure same as the DOM using the Developer tools console. </p>
 
                                 
                                 </section>
@@ -482,12 +515,12 @@
 
             
                 
-                <a href="canvas.html" class="navigation navigation-prev " aria-label="Previous page: Canvas">
+                <a href="dom.html" class="navigation navigation-prev " aria-label="Previous page: DOM">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="dom.html" class="navigation navigation-next " aria-label="Next page: DOM">
+                <a href="../chapter-3/" class="navigation navigation-next " aria-label="Next page: D3.js">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -498,7 +531,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Javascript","level":"2.1.5","depth":2,"next":{"title":"DOM","level":"2.1.6","depth":2,"path":"chapter-2/dom.md","ref":"chapter-2/dom.md","articles":[]},"previous":{"title":"Canvas","level":"2.1.4","depth":2,"path":"chapter-2/canvas.md","ref":"chapter-2/canvas.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github","tonic","gist","sitemap","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"gist":{},"github":{"_comment-url":"https or http://github.com/username/repo","_commentedOut-url":"https://github.com/biovisualize/try-datavis-now","url":"https://github.com/biovisualize/try-datavis-now"},"livereload":{},"search":{},"addcssjs":{"_comment-js":"","js":["js/custom.js"],"_comment-css":"","css":["css/custom.css"]},"lunr":{"maxIndexSize":1000000},"tonic":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://mybook.com/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"_comment-base":"github.com/username/repo","_commentedOut-base":"github.com/biovisualize/try-datavis-now","base":"github.com/biovisualize/try-datavis-now","label":"Edit This Page"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"_comment-plugins":{"prism":" For syntax highlighting.","gist":"Embeds github gists","github":" Adds github icon to top right hand corner of the page.","-highlight":" For syntax highlighting.","addcssjs":"Add external css and js files to gitbook - plugins.gitbook.com/plugin/addcssjs","tonic":"nodejs repl in the browser","-search":" .","sitemap":" .","edit-link":"Adds 'Edit this page link and icon'."},"variables":{},"gitbook":">= 3.0.0"},"file":{"path":"chapter-2/javascript.md","mtime":"2016-06-13T20:45:57.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-06-15T23:43:12.259Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Javascript","level":"2.1.6","depth":2,"next":{"title":"D3.js","level":"2.2","depth":1,"path":"chapter-3/README.md","ref":"chapter-3/README.md","articles":[{"title":"D3 charts libraries","level":"2.2.1","depth":2,"path":"chapter-3/charts-library.md","ref":"chapter-3/charts-library.md","articles":[]},{"title":"Get started","level":"2.2.2","depth":2,"path":"chapter-3/community.md","ref":"chapter-3/community.md","articles":[]},{"title":"D3 modules","level":"2.2.3","depth":2,"path":"chapter-3/d3-tools.md","ref":"chapter-3/d3-tools.md","articles":[]},{"title":"Learning path","level":"2.2.4","depth":2,"path":"chapter-3/learning-path.md","ref":"chapter-3/learning-path.md","articles":[]}]},"previous":{"title":"DOM","level":"2.1.5","depth":2,"path":"chapter-2/dom.md","ref":"chapter-2/dom.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github","tonic","gist","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"gist":{},"github":{"_comment-url":"https or http://github.com/username/repo","_commentedOut-url":"https://github.com/biovisualize/try-datavis-now","url":"https://github.com/biovisualize/try-datavis-now"},"livereload":{},"search":{},"addcssjs":{"_comment-js":"","js":["js/custom.js"],"_comment-css":"","css":["css/custom.css"]},"lunr":{"maxIndexSize":1000000},"tonic":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"_comment-base":"github.com/username/repo","_commentedOut-base":"github.com/biovisualize/try-datavis-now","base":"github.com/biovisualize/try-datavis-now","label":"Edit This Page"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"_comment-plugins":{"edit-link":"Adds 'Edit this page link and icon'.","github":" Adds github icon to top right hand corner of the page.","tonic":"nodejs repl in the browser","gist":"Embeds github gists","prism":" For syntax highlighting.","-highlight":" For syntax highlighting."},"variables":{},"gitbook":">= 3.0.0"},"file":{"path":"chapter-2/javascript.md","mtime":"2016-07-09T05:04:20.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-07-09T13:29:53.098Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

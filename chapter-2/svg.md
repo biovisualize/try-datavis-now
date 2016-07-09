@@ -14,7 +14,7 @@ Markup for graphics.
 		</style>
 	</head>
 	<body>
-		<svg height="297mm" width="210mm">
+		<svg height="300" width="500">
 				<rect height="60" width="50" stroke="#000" y="6" x="7" fill="#f00"/>
 				<rect class="bar" height="60" width="50" y="6" x="7" />
 		</svg>

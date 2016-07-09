@@ -16,3 +16,7 @@
 * Snap.svg
 * Fabric.js
 * Paper.js
+
+# Git and Blockbuilder
+
+https://help.github.com/articles/good-resources-for-learning-git-and-github/

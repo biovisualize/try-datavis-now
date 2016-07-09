@@ -1,9 +1,13 @@
 .page-wrapper {
-	font-size: 24px !important;
+	font-size: 32px !important;
+}
+
+.book.font-size-2 .book-body .page-inner section {
+	font-size: 24px!important;
 }
 
 .markdown-section h1 {
-	font-size: 2.5em;
+	font-size: 2em;
 }
 
 .markdown-section h2 {
@@ -19,3 +23,17 @@ li p {
 	margin-top: 0.8em!important;
 }
 
+.tips {
+	background-color: aliceblue;
+	padding: 20px;
+	margin: 30px 0;
+}
+
+iframe {
+	height: 800px;
+}
+
+.page-inner {
+	max-width: 100%!important;
+    margin: 0 50px;
+}

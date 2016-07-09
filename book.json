@@ -7,12 +7,9 @@
 		"tonic":"nodejs repl in the browser",
 		"gist":"Embeds github gists",
 		"prism":" For syntax highlighting.",
-		"-highlight":" For syntax highlighting.",
-		"sitemap":" .",
-		"-search":" .",
-		"addcssjs":"Add external css and js files to gitbook - plugins.gitbook.com/plugin/addcssjs"
+		"-highlight":" For syntax highlighting."
 	},
-	"plugins":["edit-link", "prism", "-highlight", "github", "tonic", "gist", "sitemap"], 
+	"plugins":["edit-link", "prism", "-highlight", "github", "tonic", "gist"], 
 	"pluginsConfig":
 	{
 		"edit-link":
@@ -28,16 +25,12 @@
 			"_commentedOut-url":"https://github.com/biovisualize/try-datavis-now",
 			"url": "https://github.com/biovisualize/try-datavis-now"
 		},
-		"sitemap": 
-		{
-    	"hostname": "http://mybook.com/"
-    },
-    "addcssjs": 
-    {
-    	"_comment-js":"",
-    	"js": ["js/custom.js"],
-    	"_comment-css":"",
-    	"css": ["css/custom.css"]
-  	}
+	    "addcssjs": 
+	    {
+	    	"_comment-js":"",
+	    	"js": ["js/custom.js"],
+	    	"_comment-css":"",
+	    	"css": ["css/custom.css"]
+	  	}
 	}
 }

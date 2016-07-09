@@ -287,12 +287,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.5" data-path="javascript.html">
+        <li class="chapter " data-level="2.1.5" data-path="dom.html">
             
-                <a href="javascript.html">
+                <a href="dom.html">
             
                     
-                    Javascript
+                    DOM
             
                 </a>
             
@@ -300,12 +300,12 @@
             
         </li>
     
-        <li class="chapter " data-level="2.1.6" data-path="dom.html">
+        <li class="chapter " data-level="2.1.6" data-path="javascript.html">
             
-                <a href="dom.html">
+                <a href="javascript.html">
             
                     
-                    DOM
+                    Javascript
             
                 </a>
             
@@ -332,12 +332,12 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="2.2.1" data-path="../chapter-3/d3-tools.html">
+        <li class="chapter " data-level="2.2.1" data-path="../chapter-3/charts-library.html">
             
-                <a href="../chapter-3/d3-tools.html">
+                <a href="../chapter-3/charts-library.html">
             
                     
-                    D3 modules
+                    D3 charts libraries
             
                 </a>
             
@@ -358,12 +358,25 @@
             
         </li>
     
-        <li class="chapter " data-level="2.2.3" data-path="../chapter-3/charts-library.html">
+        <li class="chapter " data-level="2.2.3" data-path="../chapter-3/d3-tools.html">
             
-                <a href="../chapter-3/charts-library.html">
+                <a href="../chapter-3/d3-tools.html">
             
                     
-                    D3 charts libraries
+                    D3 modules
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2.4" data-path="../chapter-3/learning-path.html">
+            
+                <a href="../chapter-3/learning-path.html">
+            
+                    
+                    Learning path
             
                 </a>
             
@@ -422,7 +435,7 @@
                                 <section class="normal markdown-section">
                                 
                                 <h1 id="css">CSS</h1>
-<p>CSS is very useful to separate the semantic from the style. <a href="http://reference.sitepoint.com/css" _target="blank">CSS</a></p>
+<p><a href="http://reference.sitepoint.com/css" _target="blank">CSS</a> is very useful to separate the semantic from the style.</p>
 <p>We could say that CSS takes care of two things: the graphical style and the geometry. </p>
 <p>Graphical style:</p>
 <ul>
@@ -435,6 +448,7 @@
 <li>sizes</li>
 <li>padding and margins</li>
 </ul>
+<p><a class="jsbin-embed" href="http://jsbin.com/dacupu/embed?html,output&amp;height=500px" _target="blank"> on jsbin.com</a><script src="http://static.jsbin.com/js/embed.min.js?3.36.11"></script></p>
 <pre><code class="lang-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
         <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Page title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
@@ -453,7 +467,81 @@
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
 </code></pre>
+<p>There are 3 ways to apply a style</p>
+<pre><code class="lang-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Page title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment" spellcheck="true">&lt;!-- external file --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>stylesheet<span class="token punctuation">&quot;</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>style/style.css<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment" spellcheck="true">&lt;!-- in the header --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span>
+            .foo {
+                font-style: italic;
+            }
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+        <span class="token comment" spellcheck="true">&lt;!-- inline using the style attribute --&gt;</span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>foo<span class="token punctuation">&quot;</span></span> <span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>color:red<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>Some text<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<div class="tips">
+The &quot;cascading&quot; is CSS means if you have multiple styles applied to the same element and conflicting, for example trying to set the color of the same font, the style that will be applied is the one closer to the tag. So the inline style will have a priority over non-inline, then it depends on the position in the stylesheet. 
 
+Some attributes have the same function as some styles. For example, what color will the following rectangle be?
+</div>
+
+<pre><code class="lang-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Page title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span>
+            rect {
+                fill: blue;
+            }
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>rect</span> <span class="token attr-name">x</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>10<span class="token punctuation">&quot;</span></span> <span class="token attr-name">y</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>10<span class="token punctuation">&quot;</span></span> <span class="token attr-name">width</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>100<span class="token punctuation">&quot;</span></span> <span class="token attr-name">height</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>100<span class="token punctuation">&quot;</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>green<span class="token punctuation">&quot;</span></span> <span class="token attr-name">style</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>fill:red<span class="token punctuation">&quot;</span></span><span class="token punctuation">/&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<p>Red</p>
+<svg><rect x="10" y="10" width="100" height="100" fill="green" style="fill:red"/></svg>
+
+<div class="tips">
+I suggest to use styles whenever you have the choice. It will make it easier to extract them to an external stylesheet for example. Keep in mind that a style like <pre>width:100px</pre> needs a unit like &quot;px&quot;, where an attribute like <pre>width=&quot;100&quot;</pre> will take a default one if not specified.
+</div>
+
+<p>CSS uses selectors to know on which tag to apply the style. Simple selectors can be a tag name, an id or or a class. </p>
+<pre><code class="lang-html"><span class="token doctype">&lt;!DOCTYPE html&gt;</span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">&gt;</span></span>Page title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">&gt;</span></span>
+            <span class="token comment" spellcheck="true">&lt;!-- tag name --&gt;</span>
+            div {
+                color: blue;
+            }
+            <span class="token comment" spellcheck="true">&lt;!-- id --&gt;</span>
+            #foo {
+                color: green;
+            }
+            <span class="token comment" spellcheck="true">&lt;!-- class --&gt;</span>
+            .bar {
+                color: red;
+            }
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>A<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>foo<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>B<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">&quot;</span>bar<span class="token punctuation">&quot;</span></span><span class="token punctuation">&gt;</span></span>C<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">&gt;</span></span>
+</code></pre>
+<div class="tips">
+There&apos;s a convention that there should never be two elements with the same id. A class should be used instead to apply style to multiple elements. But nothing will break if you don&apos;t respect this convention. You can also have multiple classes to identify the same element like <pre>&lt;div class=&quot;foo bar&quot;&lt;/div&gt;</pre>
+</div>
                                 
                                 </section>
                             
@@ -496,7 +584,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"CSS","level":"2.1.2","depth":2,"next":{"title":"SVG","level":"2.1.3","depth":2,"path":"chapter-2/svg.md","ref":"chapter-2/svg.md","articles":[]},"previous":{"title":"HTML","level":"2.1.1","depth":2,"path":"chapter-2/html.md","ref":"chapter-2/html.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github","tonic","gist","sitemap","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"gist":{},"github":{"_comment-url":"https or http://github.com/username/repo","_commentedOut-url":"https://github.com/biovisualize/try-datavis-now","url":"https://github.com/biovisualize/try-datavis-now"},"livereload":{},"search":{},"addcssjs":{"_comment-js":"","js":["js/custom.js"],"_comment-css":"","css":["css/custom.css"]},"lunr":{"maxIndexSize":1000000},"tonic":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sitemap":{"hostname":"http://mybook.com/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"_comment-base":"github.com/username/repo","_commentedOut-base":"github.com/biovisualize/try-datavis-now","base":"github.com/biovisualize/try-datavis-now","label":"Edit This Page"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"_comment-plugins":{"prism":" For syntax highlighting.","gist":"Embeds github gists","github":" Adds github icon to top right hand corner of the page.","-highlight":" For syntax highlighting.","addcssjs":"Add external css and js files to gitbook - plugins.gitbook.com/plugin/addcssjs","tonic":"nodejs repl in the browser","-search":" .","sitemap":" .","edit-link":"Adds 'Edit this page link and icon'."},"variables":{},"gitbook":">= 3.0.0"},"file":{"path":"chapter-2/css.md","mtime":"2016-06-13T20:30:35.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-06-15T23:43:12.259Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"CSS","level":"2.1.2","depth":2,"next":{"title":"SVG","level":"2.1.3","depth":2,"path":"chapter-2/svg.md","ref":"chapter-2/svg.md","articles":[]},"previous":{"title":"HTML","level":"2.1.1","depth":2,"path":"chapter-2/html.md","ref":"chapter-2/html.md","articles":[]},"dir":"ltr"},"config":{"plugins":["edit-link","prism","-highlight","github","tonic","gist","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{},"gist":{},"github":{"_comment-url":"https or http://github.com/username/repo","_commentedOut-url":"https://github.com/biovisualize/try-datavis-now","url":"https://github.com/biovisualize/try-datavis-now"},"livereload":{},"search":{},"addcssjs":{"_comment-js":"","js":["js/custom.js"],"_comment-css":"","css":["css/custom.css"]},"lunr":{"maxIndexSize":1000000},"tonic":{},"fontsettings":{"theme":"white","family":"sans","size":2},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"edit-link":{"_comment-base":"github.com/username/repo","_commentedOut-base":"github.com/biovisualize/try-datavis-now","base":"github.com/biovisualize/try-datavis-now","label":"Edit This Page"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"_comment-plugins":{"edit-link":"Adds 'Edit this page link and icon'.","github":" Adds github icon to top right hand corner of the page.","tonic":"nodejs repl in the browser","gist":"Embeds github gists","prism":" For syntax highlighting.","-highlight":" For syntax highlighting."},"variables":{},"gitbook":">= 3.0.0"},"file":{"path":"chapter-2/css.md","mtime":"2016-07-09T05:03:11.000Z","type":"markdown"},"gitbook":{"version":"3.0.0","time":"2016-07-09T13:29:53.098Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
